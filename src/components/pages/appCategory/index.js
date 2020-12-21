@@ -3,6 +3,7 @@ import styles from './styles'
 
 import appSearch from '../../appSearch'
 import appCategoryItem from '../../appCategoryItem'
+import appCarousel from '../../appCarousel'
 
 const appCategory = () => {
 
@@ -10,7 +11,8 @@ const appCategory = () => {
 
     const children = () => ({
         appSearch,
-        appCategoryItem
+        appCategoryItem,
+        appCarousel
     })
 
     return {

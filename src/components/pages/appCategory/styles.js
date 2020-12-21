@@ -18,7 +18,6 @@ export default ({ ctx, css }) => css`
         display:flex;
         width:100%;
         max-width:1180px;
-        padding:15px 0;
     }
 
     ${ctx} .page__header {
@@ -36,6 +35,6 @@ export default ({ ctx, css }) => css`
         display:flex;
         flex-wrap: wrap;
         width:100%;
-        padding:15px;
+        padding:30px 15px 15px 15px;
     }
 `

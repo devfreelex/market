@@ -15,7 +15,7 @@ export default ({ ctx, css }) => css`
   
     ${ctx} .cat__item__wrapper {
         display:flex;
-        width:100%
+        width:100%;
     }
 
     ${ctx} .cat__item__link {
@@ -65,11 +65,11 @@ export default ({ ctx, css }) => css`
     @media all and (max-width: 480px) {
         ${ctx} {
             width:100%;
-            padding: 0 0 15px 15px;
+            padding: 0 0 15px 0;
         }
 
         ${ctx} + ${ctx} {
-            padding: 0 0 15px 15px;
+            padding: 0 0 15px 0;
         }         
     }
 
