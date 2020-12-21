@@ -33,8 +33,9 @@ export default ({ ctx, css }) => css`
     }
 
     ${ctx} .category__items {
-        display:block;
-        float:left;
+        display:flex;
+        flex-wrap: wrap;
         width:100%;
+        padding:15px;
     }
 `
