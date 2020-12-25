@@ -10,7 +10,7 @@ const routes = {
     defaultRoute: { hash: '#/404', component: appNotFound },
     otherRoutes: [
         { hashExp: /^\#\/$/, component: appLogin },
-        { hashExp: /^\#\/category$/, component: appCategory },
+        { hashExp: /^\#\/home$/, component: appCategory },
     ]
 }
 

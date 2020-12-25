@@ -24,7 +24,6 @@ const appCarousel = () => {
             carousel = carouselFactory({
                 selector: '.carousel__area'
             })
-            console.log(carousel)
         }
     })
 
