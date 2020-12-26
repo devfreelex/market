@@ -117,5 +117,15 @@ body {
     left:20px;       
 }
 
+.form .invalidInput {
+    border-color: #f593af;
+    color: #f593af
+}
+
+.form .validInput {
+    border-color: #80dcc6;
+    color: #80dcc6
+}
+
 
 
