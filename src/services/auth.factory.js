@@ -1,17 +1,12 @@
-// import add from 'date-fns/add'
-import { add, toDate, compareAsc } from 'date-fns/esm'
+import { add, compareAsc } from 'date-fns/esm'
 
 const authFactory = () => {
     let _token = null
-    const validations = {
-        email: false,
-        password: false
-    }
 
     const _createToken = () => {
         const randomString = Math.random().toString(13).replace('0.', '') 
         const creationTime = new Date().getTime()
-        const expirationTime = add(creationTime, { minutes: 60 }).getTime()
+        const expirationTime = add(creationTime, { minutes: 90 }).getTime()
 
         _token = `${creationTime}-${expirationTime}-${randomString}`
         return _token
@@ -37,11 +32,17 @@ const authFactory = () => {
 
     }
 
+    const redoAuthentication = (callback) => {
+        _token = null
+        if(!!callback && typeof callback === 'function') callback()
+    }
+
     const authenticate = ( data ) => _validate(data)
 
     return {
         authenticate,
-        validateToken
+        validateToken,
+        redoAuthentication
     }
 
 

@@ -13,7 +13,7 @@ const appSimpleLogin = () => {
 
     const hooks = ({ methods }) => ({
         beforeOnInit () {
-            authStore.on(methods.loadHome)
+            authStore.on(methods.isValidAuth)
         }
     })
 
@@ -45,19 +45,20 @@ const appSimpleLogin = () => {
             const payload = Object.assign(state, { password })
             setState(payload)
         },
-        updateState (dataStore) {
-
-        },
         authenticate () {
             const state = getState()
             const token = authService.authenticate(state)
             if(token) authStore.update({ token })
 
         },
-        loadHome () {
-            const data = authStore.get()
-            if(!data.token) return
-            window.location.hash = '#/home'
+        isValidAuth () {
+            const token = authStore.get('token')
+            const isValidToken = authService.validateToken(token)
+            if(isValidToken) {
+                setState({ email: '', password: ''})
+                window.location.hash = '#/home'
+                setTimeout(() => authStore.update({ token: ''}), 10000)
+            }
         }
     })
 
