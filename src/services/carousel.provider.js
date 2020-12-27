@@ -11,7 +11,7 @@ const carouselFactory = ({ selector, duration, effect }) => {
         draggable: true,
         multipleDrag: false,
         threshold: 20,
-        loop: false,
+        loop: true,
         rtl: false,
     });
 

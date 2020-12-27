@@ -140,7 +140,6 @@ const appSimpleLogin = () => {
             if(isValidToken) {
                 setState({ email: '', password: ''})
                 window.location.hash = '#/home'
-                setTimeout(() => authStore.update({ token: ''}), 10000)
             }
         }
 
