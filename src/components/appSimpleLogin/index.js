@@ -32,7 +32,7 @@ const appSimpleLogin = () => {
                 methods.setEmail(target)
                 methods.toggleButton()
                 methods.setFocus(target, queryOnce)
-            }, true, 100)
+            }, true, 1000)
         },
         onTypePassword () {
             const passwordInput = queryOnce('#password')
@@ -40,7 +40,7 @@ const appSimpleLogin = () => {
                 methods.setPassword(target)
                 methods.toggleButton()
                 methods.setFocus(target, queryOnce)
-            }, true, 100)
+            }, true, 1000)
         },
         onClickButton () {
             const button = queryOnce('#btnLogin')

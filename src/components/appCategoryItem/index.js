@@ -4,6 +4,7 @@ import styles from './styles'
 const appCategoryItem = () => {
 
     const props = {}
+    const state = { 'teste': true}
 
     return {
         props,
