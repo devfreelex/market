@@ -2,13 +2,15 @@ import template from './template'
 import styles from './styles'
 
 import appSearch from '../../appSearch'
+import appProduct from '../../appProduct'
 
 const appCategory = () => {
 
     const state = {}
 
     const children = () => ({
-        appSearch
+        appSearch,
+        appProduct
     })
 
     return {
