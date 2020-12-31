@@ -4,7 +4,6 @@ export default ({ ctx, css }) => css`
         width:100%;
         margin-bottom:15px;
         flex-direction: column;
-        background:red
     }
 
     ${ctx} .simple__login__wrapper {

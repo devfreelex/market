@@ -1,8 +1,9 @@
 import { r9x } from 'r9x_js'
 import appMain from './components/appMain'
 import appLogin from './components/appLogin'
-import appCategory from './components/pages/appCategory'
+import appHome from './components/pages/appHome'
 import appNotFound from './components/appNotFound.component'
+import appCategory from './components/pages/appCategory'
 
 console.log('Rodrigo asdf')
 
@@ -12,7 +13,8 @@ const routes = {
     defaultRoute: { hash: '#/404', component: appNotFound },
     otherRoutes: [
         { hashExp: /^\#\/$/, component: appLogin },
-        { hashExp: /^\#\/home$/, component: appCategory },
+        { hashExp: /^\#\/home$/, component: appHome },
+        { hashExp: /^\#\/category$/, component: appCategory },
     ]
 }
 
