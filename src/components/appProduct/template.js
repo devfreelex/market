@@ -1,7 +1,7 @@
 import arrozImg from '../../assets/images/arroz.jpeg'
 
 export default ({ state, html }) => html`
-    <div class="product__wrapper">
+    <div class="product__wrapper mini">
         <div class="image__wrapper">
             <img src="${arrozImg}" class="product__image">
         </div>

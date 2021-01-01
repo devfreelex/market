@@ -14,62 +14,77 @@ export default ({ state, html }) => html`
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
             <div 
                 data-component="appCategoryItem"
                 data-label="Categoria"
+                data-link="#/category"
             ></div>
         </div>
     </div>
