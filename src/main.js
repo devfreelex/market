@@ -4,6 +4,7 @@ import appLogin from './components/appLogin'
 import appHome from './components/pages/appHome'
 import appNotFound from './components/appNotFound.component'
 import appCategory from './components/pages/appCategory'
+import appCart from './components/pages/appCart'
 
 console.log('Rodrigo asdf')
 
@@ -15,6 +16,7 @@ const routes = {
         { hashExp: /^\#\/$/, component: appLogin },
         { hashExp: /^\#\/home$/, component: appHome },
         { hashExp: /^\#\/category$/, component: appCategory },
+        { hashExp: /^\#\/cart$/, component: appCart },
     ]
 }
 
