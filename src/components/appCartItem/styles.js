@@ -6,13 +6,13 @@ export default ({ ctx, css }) => css`
         background:#fff
     }
 
-    .cart_item__wrapper {
+    ${ctx} .cart_item__wrapper {
         display:flex;
         width:100%;   
         padding:15px;
     }
 
-    .cart_item__image {
+    ${ctx} .cart_item__image {
         display:flex;
         width:100px;
         height:100px;
@@ -20,10 +20,10 @@ export default ({ ctx, css }) => css`
         border:1px #ebebeb solid;
     }
 
-    .cart_item__image > img {
+    ${ctx} .cart_item__image > img {
         width:100%;
     }
-    .cart_item__content {
+    ${ctx} .cart_item__content {
         display:flex;
         flex-direction:column;
         width:calc(100% - 211px);
@@ -31,7 +31,7 @@ export default ({ ctx, css }) => css`
         border:1px #ebebeb solid;
         border-left:0;
     }
-    .cart_item__title {
+    ${ctx} .cart_item__title {
         display:flex;
         width:100%;
         padding:0 0 15px 0;
@@ -40,7 +40,7 @@ export default ({ ctx, css }) => css`
         color:#666;
     }
 
-    .cart_item__amount {
+    ${ctx} .cart_item__amount {
         display:flex;
         width:100%;
     }
@@ -163,7 +163,6 @@ export default ({ ctx, css }) => css`
     ${ctx} .cart_item__value {
         width:170px;
     }
-
 
 }    
 `
